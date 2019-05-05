@@ -19,7 +19,7 @@
     "start-spa": "nuxt start --spa",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "predeploy": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "engines": {
