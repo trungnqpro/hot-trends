@@ -34,7 +34,7 @@ export default {
 
   modules: [ '~/modules' ],
 
-  ...routerBase,
+  routerBase,
 
   axios: {
     baseURL: 'https://api.hnpwa.com/v0/'
