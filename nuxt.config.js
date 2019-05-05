@@ -1,4 +1,11 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/hot-trends/'
+  }
+} : {}
+
 export default {
+  mode: 'universal',
   head: {
     titleTemplate: 'Nuxt HN | %s',
     meta: [
@@ -26,6 +33,8 @@ export default {
   },
 
   modules: [ '~/modules' ],
+
+  ...routerBase,
 
   axios: {
     baseURL: 'https://api.hnpwa.com/v0/'
