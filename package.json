@@ -33,8 +33,8 @@
     "nuxt-edge": "^2.5.0-25848007.21b1b865"
   },
   "devDependencies": {
-    "@nuxtjs/pwa": "3.0.0-beta.8",
     "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/pwa": "3.0.0-beta.8",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.14.1",
     "eslint-config-standard": "^12.0.0",
@@ -44,6 +44,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.2",
+    "push-dir": "^0.4.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   }
