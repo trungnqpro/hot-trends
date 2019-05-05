@@ -37,9 +37,9 @@ export default {
   router: {
     base: '/hot-trends/'
   },
-  build: {
-    publicPath: '/static/',
-  },
+  // build: {
+  //   publicPath: '/static/',
+  // },
 
   axios: {
     baseURL: 'https://api.hnpwa.com/v0/'
