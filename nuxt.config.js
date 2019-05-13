@@ -34,13 +34,10 @@ export default {
 
   modules: [ '~/modules' ],
 
-  router: {
-    base: '/hot-trends/'
-  },
-  // build: {
-  //   publicPath: '/static/',
+  // router: {
+  //   base: '/hot-trends/'
   // },
-
+  routerBase, 
   axios: {
     baseURL: 'https://api.hnpwa.com/v0/'
   },
