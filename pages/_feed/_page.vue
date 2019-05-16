@@ -50,10 +50,10 @@ export default {
       return feeds[this.feed].pages
     },
     pageData() {
-      return this.$store.state.feeds[this.feed][this.page]
+      return this.$store.state.news.feeds[this.feed][this.page]
     },
     displayedItems() {
-      return this.pageData.map(id => this.$store.state.items[id])
+      return this.pageData.map(id => this.$store.state.news.items[id])
     },
     loading() {
       return this.displayedItems.length === 0
@@ -65,7 +65,7 @@ export default {
   },
 
   fetch({ store, params: { feed, page = 1 } }) {
-    return store.dispatch('FETCH_FEED', { feed, page })
+    return store.dispatch('news/FETCH_FEED', { feed, page })
   },
 
   head() {
@@ -87,7 +87,7 @@ export default {
 
       // Prefetch next page
       this.$store
-        .dispatch('FETCH_FEED', {
+        .dispatch('news/FETCH_FEED', {
           feed: this.feed,
           page: this.page + 1,
           prefetch: true

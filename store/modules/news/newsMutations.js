@@ -1,3 +1,5 @@
+import Vue from 'vue'
+
 export default {
   SET_FEED: (state, { feed, ids, page }) => {
     Vue.set(state.feeds[feed], page, ids)

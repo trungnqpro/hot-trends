@@ -1,4 +1,7 @@
 
+import { lazy } from '~/common/utils'
+import { CancelToken } from 'axios'
+
 export default {
   FETCH_FEED({ commit, state }, { feed, page, prefetch }) {
     // Don't priorotize already fetched feeds

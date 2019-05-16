@@ -1,3 +1,6 @@
+import { validFeeds } from '~/common/api'
+
+
 export default () => {
   const state = {
     items: {

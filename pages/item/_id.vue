@@ -52,7 +52,7 @@ export default {
   },
 
   fetch({ store, query: { id } }) {
-    return store.dispatch('FETCH_ITEM', { id })
+    return store.dispatch('news/FETCH_ITEM', { id })
   }
 }
 </script>

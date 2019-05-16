@@ -43,7 +43,7 @@ export default {
   },
 
   fetch({ store, route: { params: { id } } }) {
-    return store.dispatch('FETCH_USER', { id })
+    return store.dispatch('news/FETCH_USER', { id })
   }
 }
 </script>
